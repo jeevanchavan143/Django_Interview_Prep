@@ -15,7 +15,7 @@
 
 7. College --> models.py
 
-# Create your models here.
+#Create your models here.
 class student(models.Model):
     name=models.CharField(max_length=12)
     age=models.IntegerField()
@@ -28,7 +28,7 @@ class student(models.Model):
 
 from College.models import student
 
-# Register your models here.
+#Register your models here.
 
 admin.site.register(student)
 
