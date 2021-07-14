@@ -60,5 +60,24 @@ Add Data to student table
 >>> student.objects.filter(rollno=10).update(name="Jeevanchavan143")
 1
 
+#QuerySet: 
+In College --> views.py 
+def home(request):
+    student_data=student.objects.all()                                   # retrive all rows (objects) of your model returns list of objects
+    #print(student_data.query)                                           # To view SQL query generated behind the scene 
+    return render(request,'home.html',{'Students':student_data})         #JINJA 2 TEMPLATE
+    
+    
+    
+ In College --> templates -->College --> home.html
+ <!DOCTYPE>
+ <body>
+    {% for student in students %}
+        {{student.id}}
+        {{student.name}}
+        {{studnet.marks}}
+    {% endfor %}
+</body> 
+
 
 
