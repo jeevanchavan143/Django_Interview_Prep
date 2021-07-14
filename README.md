@@ -3,12 +3,16 @@
 
 #Django ORM 
 
-1. Created Virtual Env.
+1.Created Virtual Env.
 2. pip install django
-3.django-admin startproject BasicORM
+3. django-admin startproject BasicORM
+
 4.cd BasicORM
+
 5.python manage.py startapp College
+
 6.BasicORM-->settings.py INSTALLED_APPS=['College']
+
 7. College --> models.py
 
 # Create your models here.
