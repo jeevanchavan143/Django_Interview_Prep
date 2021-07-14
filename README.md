@@ -53,6 +53,11 @@ Add Data to student table
 >> from College.models import student
 >>student.objects.all()
 
+<QuerySet [<student: Jeevan>, <student: Karan>, <student: Shree>]>
+>>> student.objects.all().update(age=21)
+3
+>>> student.objects.filter(rollno=10).update(name="Jeevanchavan143")
+1
 
 
 
